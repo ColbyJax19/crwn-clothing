@@ -2,6 +2,7 @@ import {
   signInWithGooglePopup,
   createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase.utils';
+import { getRedirectResult } from 'firebase/auth';
 
 const SignIn = () => {
   const logGoogleUser = async () => {
