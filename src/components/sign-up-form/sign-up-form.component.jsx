@@ -9,11 +9,17 @@ const defaultFormFields = {
 };
 
 const SignUpForm = () => {
+  //formFields === variable, setFormFields === function, useState === default
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    //confirm password matched
+
+    //confirm user is authenticated with email and password
+
+    //create a user document from what is returned
   };
 
   const handleChange = (event) => {

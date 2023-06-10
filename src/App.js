@@ -13,13 +13,17 @@ const Shop = () => {
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Navigation />}>
+    <div>
+      {/* // Why is everything nested in the nav? */}
+      <Navigation />
+      <Routes>
+        {/* <Route path="/" element={<Navigation />}> */}
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
         <Route path="sign-in" element={<SignIn />} />
-      </Route>
-    </Routes>
+        {/* </Route> */}
+      </Routes>
+    </div>
   );
 };
 
